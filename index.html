@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/myStyle.css">
+    <title>checkpoint-3</title>
+</head>
+<!------------------------------------------------------------------------------------------------------------------------>
+
+<body>
+
+
+
+
+    <!--TITLE-->
+    <header class="container-fluid bg-primary text-white">
+        <div class="row">
+            <div class="col text-center p-5">
+                <h1>Task Master</h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!--CONTENT-->
+    <main class="container-fluid bg-light">
+        <!--form inputs-->
+
+
+
+
+        <!--ADD LIST FORM-->
+        <form class="mt-5" onsubmit="app.listController.addList()">
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <input type="text" id="name" class="form-control mb-2" id="inlineFormInput" placeholder="List Name"
+                        minlength="3" maxlength="15" required>
+                </div>
+                <div class="col-auto">
+                    <select id="color" class="custom-select mb-2" id="inlineFormCustomSelectPref" required>
+                        <option class="text-white color-default" value="color-default">LIGHT BLUE</option>
+                        <option class="text-white color-red" value="color-red">RED</option>
+                        <option class="text-white color-blue" value="color-blue">BLUE</option>
+                        <option class="text-white color-green" value="color-green">GREEN</option>
+                        <option class="text-white color-purple" value="color-purple">PURPLE</option>
+                        <option class="text-white color-orange" value="color-orange">ORANGE</option>
+                        <option class="text-white color-gray" value="color-gray">GRAY</option>
+                        <option class="text-white color-pink" value="color-pink">PINK</option>
+                        <option class="text-white color-teal" value="color-teal">TEAL</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Add List</button>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+        <!--created lists-->
+        <div class="row p-3" id="list">
+
+            <!--HTML-INSERT-->
+
+            <!------------>
+
+        </div>
+    </main>
+
+
+
+
+    <!--EMPTY FOOTER-->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="app/main.js" type="module"></script>
+</body>
+<!------------------------------------------------------------------------------------------------------------------------>
+
+</html>
